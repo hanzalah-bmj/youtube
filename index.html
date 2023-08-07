@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fa5629d672.js" crossorigin="anonymous"></script>
+    <title>Youtube</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .header {
+            margin-left: 10px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            background-color: white;
+            z-index: 100;
+        }
+
+        .menu {
+            width: 50px;
+        }
+
+        .logo-con {
+            width: 350px;
+        }
+
+        .search {
+            width: 450px;
+        }
+
+        .fa-bars, .fa-video, .fa-bell, .fa-user {
+            font-size: 25px;
+        }
+
+        .logo {
+            width: 150px;
+        }
+
+        .searchbar input[type=text] {
+            padding: 10px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 30px;
+            float: left;
+            width: 400px;
+        }
+
+        .searchbar button {
+            background-color: transparent;
+            border-radius: 28px;
+            margin-left: -42px;
+            width: 40px;
+            padding: 12px;
+            font-size: 16px;
+            border: 0px;
+            border-left: 2px solid grey;
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+        }
+
+        .main_box {
+            display: flex;
+        }
+
+        .main_left {
+            margin-left: 10px;
+            width: 10vw;
+            height: 90vh;
+            position: fixed;
+            overflow: scroll;
+            z-index: 110;
+            text-align: center;
+        }
+
+        .right_menu {
+            background-color: white;
+            margin-left: 150px;
+            position: sticky;
+            top: 100px;
+            height: 50px;
+            z-index: 100;
+        }
+
+        .main_container {
+            margin-left: 170px;
+            margin-top: 30px;
+        }
+
+        .main_right_menu {
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            padding: 9px;
+            margin: 10px;
+            font-size: 20px;
+            display: inline;
+        }
+
+        .main_right_menu:hover {
+            background-color: #c2c2c2;
+        }
+
+
+        ul {
+            list-style: none;
+        }
+
+        .fa-microphone, .fa-video, .fa-bell, .fa-user {
+            border: 2px solid grey;
+            font-size: 20px;
+            border-radius: 20px;
+            padding: 10px;
+            background-color: #f2f2f2;
+            margin-left: 10px;
+        }
+        .fa-microphone:hover, .fa-video:hover, .fa-bell:hover, .fa-user:hover {
+            background-color: #c2c2c2;
+        }
+
+        .fa-house {
+            font-size: 40px;
+            display: block;
+        }
+
+        .video {
+            width: 350px;
+            margin: 5px;
+            border-radius: 10px;
+        }
+
+        .video:hover {
+            border-radius: 0px;
+        }
+
+        .video_container {
+            display: flex;
+        }
+
+        h2 {
+            margin: 10px;
+        }
+
+        p {
+            margin: 10px;
+        }
+        .videoicon, .bellicon, {
+            width: 50px;
+        }
+
+        .videoicon {
+            margin-left: 80px;
+        }
+        .bellicon{
+            margin-left: 150px;
+        }
+        .accounticon {
+            margin-left:20px;
+            width: 200px;
+        }
+        .accounttext {
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="logo-con">
+            <img class="logo" src="/logo.jpg" alt="logo">
+        </div>
+        <div class="search">
+            <form class="searchbar" action="action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+        <div class="micicon"><i class="fa-solid fa-microphone"></i></div>
+        <div class="videoicon"><i class="fa-solid fa-video"></i></div>
+        <div class="bellicon"><i class="fa-solid fa-bell"></i></div>
+        <div class="accounticon"><i class="fa-regular fa-user"><span class="accounttext"> Sign in</span></i></div>
+    </div>
+    <div class="main_box">
+        <div class="main_left">
+            <ul>
+                <li><i class="fa-solid fa-house"></i></i>Home</li>
+                <li><i class="fa-solid fa-house"></i>Shorts</li>
+                <li><i class="fa-solid fa-house"></i>Subscription</li>
+                <li><i class="fa-solid fa-house"></i>Library</li>
+            </ul>
+            </br>
+            <hr>
+            </br>
+            <ul>
+                <li><i class="fa-solid fa-house"></i>Home</li>
+                <li><i class="fa-solid fa-house"></i>Shorts</li>
+                <li><i class="fa-solid fa-house"></i>Subscription</li>
+                <li><i class="fa-solid fa-house"></i>Library</li>
+            </ul>
+            </br>
+            <hr>
+            </br>
+            <ul>
+                <li><i class="fa-solid fa-house"></i>Home</li>
+                <li><i class="fa-solid fa-house"></i>Shorts</li>
+                <li><i class="fa-solid fa-house"></i>Subscription</li>
+                <li><i class="fa-solid fa-house"></i>Library</li>
+            </ul>
+            </br>
+            <hr>
+            </br>
+            <ul>
+                <li>Home</li>
+                <li>Shorts</li>
+                <li>Subscription</li>
+                <li>Library</li>
+            </ul>
+            </br>
+            <hr>
+            </br>
+            <ul>
+                <li>Home</li>
+                <li>Shorts</li>
+                <li>Subscription</li>
+                <li>Library</li>
+            </ul>
+            </br>
+            <hr>
+            </br>
+            <ul>
+                <li>Home</li>
+                <li>Shorts</li>
+                <li>Subscription</li>
+                <li>Library</li>
+            </ul>
+            </br>
+            <hr>
+            </br>
+            <ul>
+                <li>Home</li>
+                <li>Shorts</li>
+                <li>Subscription</li>
+                <li>Library</li>
+            </ul>
+            </br>
+            <hr>
+            </br>
+        </div>
+        <div class="main_right">
+            <div class="right_menu">
+                <ul>
+                    <li class="main_right_menu">All</li>
+                    <li class="main_right_menu">Mixer</li>
+                    <li class="main_right_menu">Music</li>
+                    <li class="main_right_menu">Bollywood Music</li>
+                    <li class="main_right_menu">Tamil Cinema</li>
+                    <li class="main_right_menu">Dramedy</li>
+                    <li class="main_right_menu">live</li>
+                    <li class="main_right_menu">News</li>
+                    <li class="main_right_menu">Computer Science</li>
+                    <li class="main_right_menu">Sales</li>
+                </ul>
+            </div>
+            <div class="main_container">
+                <div class="video_container">
+                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
+                        <h2>Video 1</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
+                        <h2>Video 1</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
+                        <h2>Video 1</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+                <div class="video_container">
+                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
+                        <h2>Video 1</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
+                        <h2>Video 1</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
+                        <h2>Video 1</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+                <div class="video_container">
+                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
+                        <h2>Video 1</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
+                        <h2>Video 1</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
+                        <h2>Video 1</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+                <div class="video_container">
+                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
+                        <h2>Video 1</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
+                        <h2>Video 1</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
+                        <h2>Video 1</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+                <div class="video_container">
+                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
+                        <h2>Video 1</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
+                        <h2>Video 1</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
+                        <h2>Video 1</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
