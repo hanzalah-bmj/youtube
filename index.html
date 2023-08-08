@@ -13,9 +13,12 @@
         }
 
         .header {
+            margin-top: 10px;
             margin-left: 10px;
             height: 100px;
             display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
             align-items: center;
             position: sticky;
             top: 0;
@@ -89,7 +92,7 @@
         }
 
         .main_container {
-            margin-left: 170px;
+            margin-left: 150px;
             margin-top: 30px;
         }
 
@@ -117,7 +120,6 @@
             border-radius: 20px;
             padding: 10px;
             background-color: #f2f2f2;
-            margin-left: 10px;
         }
         .fa-microphone:hover, .fa-video:hover, .fa-bell:hover, .fa-user:hover {
             background-color: #c2c2c2;
@@ -140,6 +142,9 @@
 
         .video_container {
             display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
         }
 
         h2 {
@@ -154,10 +159,10 @@
         }
 
         .videoicon {
-            margin-left: 80px;
+            margin-left: 50px;
         }
         .bellicon{
-            margin-left: 150px;
+            margin-left: 80px;
         }
         .accounticon {
             margin-left:20px;
@@ -170,6 +175,7 @@
 </head>
 
 <body>
+    <!-- Header -->
     <div class="header">
         <div class="menu">
             <i class="fa-solid fa-bars"></i>
@@ -188,6 +194,7 @@
         <div class="bellicon"><i class="fa-solid fa-bell"></i></div>
         <div class="accounticon"><i class="fa-regular fa-user"><span class="accounttext"> Sign in</span></i></div>
     </div>
+    <!-- Main Container -->
     <div class="main_box">
         <div class="main_left">
             <ul>
@@ -283,8 +290,42 @@
                         <h2>Video 1</h2>
                         <p>Lorem ipsum dolor sit.</p>
                     </div>
-                </div>
-                <div class="video_container">
+                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
+                        <h2>Video 1</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
+                        <h2>Video 1</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
+                        <h2>Video 1</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
+                        <h2>Video 1</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
+                        <h2>Video 1</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
+                        <h2>Video 1</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
+                        <h2>Video 1</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
+                        <h2>Video 1</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
+                        <h2>Video 1</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
                     <div class="videobox"><video class="video" src="/video.mp4" controls></video>
                         <h2>Video 1</h2>
                         <p>Lorem ipsum dolor sit.</p>
@@ -298,52 +339,10 @@
                         <p>Lorem ipsum dolor sit.</p>
                     </div>
                 </div>
-                <div class="video_container">
-                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
-                        <h2>Video 1</h2>
-                        <p>Lorem ipsum dolor sit.</p>
-                    </div>
-                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
-                        <h2>Video 1</h2>
-                        <p>Lorem ipsum dolor sit.</p>
-                    </div>
-                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
-                        <h2>Video 1</h2>
-                        <p>Lorem ipsum dolor sit.</p>
-                    </div>
-                </div>
-                <div class="video_container">
-                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
-                        <h2>Video 1</h2>
-                        <p>Lorem ipsum dolor sit.</p>
-                    </div>
-                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
-                        <h2>Video 1</h2>
-                        <p>Lorem ipsum dolor sit.</p>
-                    </div>
-                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
-                        <h2>Video 1</h2>
-                        <p>Lorem ipsum dolor sit.</p>
-                    </div>
-                </div>
-                <div class="video_container">
-                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
-                        <h2>Video 1</h2>
-                        <p>Lorem ipsum dolor sit.</p>
-                    </div>
-                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
-                        <h2>Video 1</h2>
-                        <p>Lorem ipsum dolor sit.</p>
-                    </div>
-                    <div class="videobox"><video class="video" src="/video.mp4" controls></video>
-                        <h2>Video 1</h2>
-                        <p>Lorem ipsum dolor sit.</p>
-                    </div>
-                </div>
+                
 
             </div>
         </div>
-    </div>
     </div>
 </body>
 
