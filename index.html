@@ -13,7 +13,6 @@
         }
 
         .header {
-            margin-top: 10px;
             margin-left: 10px;
             height: 100px;
             display: flex;
@@ -154,7 +153,7 @@
         p {
             margin: 10px;
         }
-        .videoicon, .bellicon, {
+        .videoicon, .bellicon {
             width: 50px;
         }
 
@@ -166,11 +165,27 @@
         }
         .accounticon {
             margin-left:20px;
-            width: 200px;
         }
         .accounttext {
             font-size: 10px;
         }
+        @media only screen and (max-width: 600px) {
+            .main_left, .main_right_menu, .right_menu, .menu, .search, .videoicon, .bellicon, .accounttext, .fa-microphone {
+                display: none;
+            }
+            .main_container {
+                margin: auto;
+            }
+            .menu {
+                visibility: hidden;
+        }
+        .accounticon {
+            margin: 0px;
+        }
+        .logo-con {
+            width: 150px;
+        }
+    }
     </style>
 </head>
 
